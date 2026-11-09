@@ -1,0 +1,41 @@
+
+Late Night Snack Predictor Dataset - Feature Description
+
+1. current_time (Numerical):
+   - Description: Time of night in 24-hour format (e.g., 23.75 = 11:45 PM).
+   - Range: 22.00 to 3.99 (wrapped as 0-3.99 after midnight).
+
+2. fridge_item_count (Numerical):
+   - Description: Number of snack-worthy items currently in the fridge.
+   - Range: 0 to 19.
+
+3. last_meal_hour (Numerical):
+   - Description: Number of hours since the user last had a meal.
+   - Range: 1.0 to 8.0 hours.
+
+4. stress_level (Categorical - Encoded as Integer):
+   - Description: User’s stress level.
+   - Values:
+     0 = Low
+     1 = Medium
+     2 = High
+     3 = Crisis
+
+5. snack_type_preference (Categorical - Encoded as Integer):
+   - Description: User’s preferred snack taste.
+   - Values:
+     0 = Sweet
+     1 = Salty
+     2 = Spicy
+     3 = Doesn’t matter
+
+6. screen_time_today (Numerical):
+   - Description: Total screen time (in hours) for the day across all devices.
+   - Range: 1.0 to 15.0 hours.
+
+7. snack_choice (Target Variable - Categorical Encoded as Integer):
+   - Description: The snack the user is most likely to choose.
+   - Values:
+     1 = Instant Noodles
+     2 = Leftover Pizza
+ 
